@@ -1,0 +1,256 @@
+ body,html{
+    background: linear-gradient(100deg, #233458 0%, #111827 100%);
+    font-family: "Montserrat" ,sans-serif;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+ 
+ main{
+        .movie-page{
+            .container{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                margin: 80px;
+
+                .movie-trailer{
+                    .trailer-btn{
+                        position: relative;
+                        img{
+                            
+                            top: 54px;
+                            left: 140px;
+                            position: absolute;
+                        }
+                        button{
+                            margin-top: 31px;
+                            border: none;
+
+                            width: 397px;
+                            height: 65px;
+                            border-radius: 29px;
+
+                            font-weight: 700;
+                            font-size: 20px;
+                            color: #1d4ed8;
+                            background: rgba(255, 255, 255, 0.06);
+
+                            &:active{
+                                background: rgba(116, 109, 109, 0.06);
+                            }
+                        }
+                    }
+                    ul{
+                        display: flex;
+                        li{
+                            display: flex;
+                            flex-direction: column;
+                            svg{
+                                align-self: center;
+                                margin-bottom: 33px;
+                                
+                                // Треба буде зробити ефект при натисканні щоб svg залишався синім                                
+                                
+                            }
+
+                            &.active{
+                                svg{
+                                align-self: center;
+                                margin-bottom: 33px;
+                                
+                                // Треба буде зробити ефект при натисканні щоб svg залишався синім
+                                
+                                path{
+                                    fill: #1D4ED8;
+                                }    
+                            }
+                        }
+                         
+
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: #fff;
+                            margin-right: 58px;
+                            list-style: none;
+                        }
+                    }
+                }
+
+                .main-movie-info{
+
+                    .movie-title{
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: 40px;
+
+                    }
+                    .btn-box{
+                        margin-top: 51px;
+                        display: flex;
+                        .watch-btn{
+                            position: relative;
+                            margin-right: 20px;
+                            svg{
+                                position: absolute;
+                                top: 30px;
+                                left: 75px;  
+                                path{
+                                    fill: #1D4ED8;
+                                }                            
+                            }
+                            &:hover svg path{
+                                fill: #fff;
+                            }
+                            button{
+                                font-weight: 500;
+                                font-size: 24px;
+                                color: #fff;
+
+                                border: none;
+                                width: 272px;
+                                height: 80px;
+                                border-radius: 44px;
+                                background:  rgba(255, 255, 255, 0.04);
+
+                                &:hover{
+                                    background: linear-gradient(167deg, #7d96dc 0%, #1d4ed8 100%);
+                                }
+
+                            }
+                        }
+                        .download-btn{
+                            position: relative;
+                            svg{
+                                position: absolute;
+                                top: 28px;
+                                left: 40px;
+                                path{
+                                    fill: #1D4ED8;
+                                }
+                            }
+
+                            &:hover svg path{
+                                fill: #fff;
+                            }
+
+                            button{
+                                font-weight: 500;
+                                font-size: 24px;
+                                color: #fff;
+
+                                border: none;
+                                width: 272px;
+                                height: 80px;
+                                border-radius: 44px;
+                                background:  rgba(255, 255, 255, 0.04);
+
+                                &:hover{
+                                    background: linear-gradient(167deg, #7d96dc 0%, #1d4ed8 100%);
+                                }
+                            }
+                        }
+                    }
+                    .story-line{
+                        margin-top: 51px;
+                        span{
+                            font-weight: 700;
+                            font-size: 16px;
+                            color: #fff;
+                        }
+                        p{
+                            max-width: 486px;
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: #fff;
+                        }
+                    }
+                    ul{
+                    border-bottom: 2px solid #242e43;
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        padding: 0px;
+                        li{
+                            display: flex;
+                            align-items: center;
+                            span{
+                                font-weight: 500;
+                                color: #606060;
+                            }
+                            p{
+                                margin-left: 100px;
+                                font-weight: 400;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                .author-info{
+                    position: relative;
+                    margin-top: 180px;
+                    margin-left: 180px;
+                    .writen-by{
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: #fff;
+                    }
+                    .author-card{
+                        margin-bottom: 26px;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 14px;
+                        width: 266px;
+                        height: 86px;
+                        background:  rgba(217, 217, 217, 0.08);
+                        margin-top: 34px;
+
+                        img{
+                            padding:0 11px;
+                        }
+
+                        .author{
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 15px;
+                            .name{
+                                font-weight: 400;
+                                font-size: 16px;
+                                color: #fff;
+                            }
+                            .about-author{
+                                max-width: 141px;
+                                font-weight: 400;
+                                font-size: 13px;
+                                color: #878787;
+                            }
+                        }
+                    }
+                    .see_all{
+
+                        position: relative;
+                        text-decoration: none;
+                        left: 216px;
+                        span{
+                            color: #1d4ed8;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                .movie-section{
+                    position: relative;
+                    iframe{
+                        top: 100px;
+                        left: 400px;
+                        position: absolute;
+                        width: 700px;
+                        height: 500px;
+                        border-radius: 12px;
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }

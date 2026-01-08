@@ -1,0 +1,82 @@
+.search-block{
+                margin-bottom: -12px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 15px;
+                img{
+                    position: absolute;
+                    left: 36px;
+                    top: 17px;
+                    z-index: 0;
+                    width: 17px;
+                    height: 17px;
+                }
+                input{
+                    color: white;
+                    padding-left: 50px;
+                    background:  #192642;
+                    outline: none;
+                    border: none;
+                    border-radius: 46px;
+                    width: 270px;
+                    height: 49px;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+                .search-dropdown{
+                    position: absolute;
+                    top: 51px;
+                    width: 285px;
+                    height: 250px;
+                    background: #1c2944;
+                    border-bottom-right-radius: 7px;
+                    border-bottom-left-radius: 7px;
+                    border-bottom: 2px solid #535f77;
+                    border-right: 2px solid #535f77;
+                    border-left: 2px solid #535f77;
+                    display: block;
+                    .dropdown{
+                       
+                        ul{
+                            padding: 0;
+                            li{
+                                border-radius: 10px;
+                                margin-right: 0px;
+                                height: 71px;
+                                width: 100%;
+                                border: 1px solid white;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                gap: 12px 6px;
+                                list-style: none;
+                                margin-bottom: 1px;
+                                cursor: pointer;
+                                box-sizing: border-box;
+                                img{
+                                    position: relative;
+                                    left: 5px;
+                                    top: -0px;
+                                    width: 48px;
+                                    height: 69px;
+                                    object-fit: cover;
+                                     border-radius: 6px;
+                                    flex: 0 0 48px;
+                                    display: block;
+                                }
+                                span{
+                                    margin-right: 5px;
+                                   color: #fff;
+                                    font-size: 14px;
+                                    line-height: 1.2;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
