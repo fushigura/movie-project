@@ -8,9 +8,13 @@ Technologies Used
 ⚛️ React
 
 🔥 Firebase
+
 Authentication
+
 Hosting
 
 🌐 Movie API (for movies data)
+
 🎨 CSS / SCSS
+
 📦 JavaScript (ES6+)
